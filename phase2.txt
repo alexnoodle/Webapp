@@ -1,0 +1,8 @@
+Alex Schneider and Sam Nozaki
+Web Design Phase 2
+
+The mainView.html and style.css files are the files that contain the html and
+style for the view. The asstronaut.jpg file also needs to be in the same
+directory since it is used as the background image for mainView.html. The api is
+stored in api.py and the relevant tests are in api_tests.py. All of these files
+can be found on thacker in var/www/html/cs257/schneidera/webapp.

@@ -1,0 +1,64 @@
+html {
+    font-family: Calibri;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 64px;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+}
+
+
+div {
+    background: white;
+    border-radius: 24px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+table {
+    display: block;
+    background: white;
+    height: 650px;
+    padding: 20px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-collapse: collapse;
+}
+
+tbody {
+    display: block;
+    height: 600px;
+    overflow: auto;
+}
+
+thead {
+    display: block;
+}
+
+td, th {
+    padding: 5px;
+}
+
+td {
+    border: 1px solid black;
+}
+
+button {
+    cursor: pointer;
+    padding:14px;
+    border-radius: 24px;
+    background-color: cornflowerblue;
+    color: white;
+    font-family: Calibri;
+    font-size: large;
+    border-color: darkblue;
+    font-weight: bold;
+}

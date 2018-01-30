@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+    <title>EVA Database</title>
+  </head>
+
+  <body background="{{url_for('static', filename='asstronaut.jpg') }}">
+    <h1>EVA Database</h1>
+    <div>
+        <form action = "/generalSearch" method = "POST">
+            <input placeholder="Search" type="text" size="50" name="query"> <button type="submit" id="go">Go!</button>
+        </form>
+        <p>
+        <form action = "/advanced">
+            <button type="submit" id="Advanced Search">Advanced Search</button>
+        </form>
+        </p>
+	<h2>To search</h2>
+	<p>If you want to search by name of the astronaut/s, vehicle used, or country involved than use the general search. If not, use the Advanced Search.</p>
+    </div>
+  </body>
+
+  <footer>
+    <form action = "/README">
+      <button type = "submit">README</button>
+    </form>
+  </footer>
+</html>

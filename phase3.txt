@@ -1,0 +1,10 @@
+Alex Schneider and Sam Nozaki
+Web Design Phase 3
+
+The API is located in api.py and the tests are stored in api_tests.py, both of
+which are on thacker in var/www/html/cs257/schneidera/webapp. The psqlConfig.py
+file must be updated to match the username and password for the current user
+before running the API. The mainView.html, resultsView.html, and
+advancedView.html files are our view for our 3 main pages: the homepage,
+advanced search page, and results page. They are located in webapp/templates
+along with style.css and asstronaut.jpg.

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+    <title>Advanced Search</title>
+  </head>
+
+  <body background="{{url_for('static', filename='asstronaut.jpg') }}">
+    <h1>Advanced Search</h1>
+    
+    <div>
+      <p>
+        <form action = "/crew" method = "POST">
+            <input placeholder="Crew Members" type="text" size="50" name="crewMember"> <button type="submit" id="go">Search</button>
+        </form>
+      </p>
+
+      <p>
+	<form action = "/vehicle" method = "POST">
+	  <input placeholder="Vehicle Used" type="text" size="50" name="vehicle"> <button type="submit" id="go">Search</button>
+        </form>
+      </p>
+
+      <p>
+        <form action = "/duration" method = "POST">
+          <input placeholder="Duration" type="text" size="50" name="duration"> <button type="submit" id="go">Search</button>
+        </form>
+      </p>
+
+      <p>
+        <form action = "/twoDurations" method = "POST">
+          <input placeholder="Minimum Duration" type="text" size="30" name="durationOne"> <input placeholder="Maximum Duration" type="text" size="30" name="durationTwo"> <button type="submit" id="go">Search</button>
+        </form>
+      </p>
+
+      <p>
+        <form action = "/date" method = "POST">
+          <input placeholder="Date" type="text" size="50" name="date"> <button type="submit" id="go">Search</button>
+        </form>
+      </p>
+
+      <p>
+        <form action = "/twoDates" method = "POST">
+          <input placeholder="First Date" type="text" size="30" name="dateOne"> <input placeholder="Second Date" type="text" size="30" name="dateTwo"> <button type="submit" id="go">Search</button>
+        </form>
+      </p>
+
+      <p>
+        <form action = "/country" method = "POST">
+          <input placeholder="Country" type="text" size="50" name="country"> <button type="submit" id="go">Search</button>
+        </form>
+      </p>
+      
+      <form action = "/">
+	<button type = "submit">Back to Main</button>
+      </form>
+    </div>
+  </body>
+</html>

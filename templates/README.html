@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <title>README</title>
+  </head>
+
+    <body background="{{url_for('static', filename='space.jpg') }}">
+
+  	<h>Readme</h>
+  	<h1>Description</h1>
+  	<p>Our project is a simple site that can search through a dataset of all of the spacewalks up until 2013. You can search throughout the vehicle, country, and crew sections using the general search and you can search through each individual section using the advanced search page. The different parameters to search through are: Country, crew members, vehicle, date, and duration. You can also search through a range of dates or durations. The search function doesn't crash when it receives erroneous information and has buttons on all pages other than the main to bring you back to the main.</p>
+  	<h1>Features</h1>
+  	<p>General search: the query is compared against all country, crewmember, and vehicle entries and the appropriate results are displayed.
+  	Advanced search: You can search through individual sections, specifically crewmember, country, vehicle, duration, and date. It also allows for searching a range of dates or a range of durations.
+  	The results page is displayed as a table in the middle of the page that can be scrolled through without scrolling the background image.</p>
+  	<h1>Citations</h1>
+  	<p>The dataset is the Extra-vehicular Activity dataset provided by NASA at Nasa.gov. The link to the page itself can be found <a href="https://data.nasa.gov/Raw-Data/Extra-vehicular-Activity-EVA-US-and-Russia/9kcy-zwvn">here</a>. We have a good idea that the dataset is free to use becuase Nasa also says on it's about page: We have a new Open Innovation team to continue NASA’s efforts to meet the White House mandate to set our data free. The entire message can be found <a href="https://data.nasa.gov/about">here</a>.</p>
+  	<h1>One missing feature</h1>
+  	<p>The one feature we struggled to implement was to use the LIKE keyword in SQL. In other words to return any row that had the query in it somewhere instead of the query being the entire entry. It would also be nice to have a VR spacewalk experience in our site somewhere but we decided that we wanted to finish the site this year so that will have to wait.</p>
+  	<h1>The csv</h1>
+  	<p>The script we wrote to create the table is here: 
+  	<form action = "/README">
+      <button type = "submit">format-eva</button>
+    </form></p>
+
+  	</body>
+</html>

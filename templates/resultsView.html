@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='resultsStyle.css') }}">
+    <title>Search Results</title>
+  </head>
+
+  <body background="{{url_for('static', filename='asstronaut.jpg') }}">
+   
+    <h1>Results: "{{ query }}"</h1>
+    {% block content %}
+    <div>
+      <h2>{{ invalid }}</h2>
+      <table>
+	<thead>
+          <tr>
+	    <th width="55">EVA #</th>
+	    <th width="60">Country</th>
+	    <th width="150">Crew Members</th>
+	    <th width="120">Vehicle</th>
+	    <th width="85">Date</th>
+	    <th width="100">Duration</th>
+	    <th width="200">Purpose</th>
+	  </tr>
+	</thead>
+
+	<tbody>
+	  {% for row in eva %}
+            <tr>
+	      <td width="55">{{ row.evanumber }}</td>
+	      <td width="60">{{ row.country }}</td>
+	      <td width="150">{{ row.crewmembers }}</td>
+	      <td width="120">{{ row.vehicle }}</td>
+	      <td width="85">{{ row.missiondate }}</td>
+	      <td width="100">{{ row.duration }}</td>
+	      <td>{{ row.purpose }}</td>
+	    </tr>
+          {% endfor %}
+	</tbody>
+      </table>
+    </div>
+    {% endblock %}
+    <form action = "/" style = "text-align: center; padding: 10px;">
+      <button type = "submit">Back to Main</button>
+    </form>
+  </body>
+</html>
